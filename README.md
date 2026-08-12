@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Kalamitra AI Photoshoot
 
-# Run and deploy your AI Studio app
+**Status:** frontend prototype · local demo
 
-This contains everything you need to run your app locally.
+A React/Vite product-workflow concept for Indian artisans: upload a product photo, generate a styled scene with Gemini, draft listing copy, and preview a simple storefront flow.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1cKsDRNXu0rNo0BSnYbBpfsXomH6z9AsC
+## Product flow
 
-## Run Locally
+1. Upload an original product image and confirm consent.
+2. Choose a photoshoot mode and generate an edited scene.
+3. Produce listing content from the product context.
+4. Review buyer-copilot and storefront previews.
 
-**Prerequisites:**  Node.js
+## Quick start
 
+```bash
+npm install
+printf 'GEMINI_API_KEY=your_key_here\n' > .env.local
+npm run dev
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+`npm run build` performs the available production build check.
+
+## Boundaries
+
+Login, analytics, pricing, social sharing, and storefront behaviour are prototype UI flows rather than verified production integrations. Generated images and copy require human review; the repository does not establish customer usage or commercial performance.
+
+## Limitations
+
+There is no automated test suite, production authentication, durable backend, or verified hosted deployment.
